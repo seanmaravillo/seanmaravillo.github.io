@@ -1,0 +1,58 @@
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(IBMPlexMono-Regular.ttf);
+}
+
+body {
+    font-family: IBMPlexMono;
+}
+
+#basic-info {
+    background-color: #101010;
+}
+
+#pfp {
+    border-radius: 50%;
+    width: 15vw;
+}
+
+#name {
+    color: white;
+}
+
+#designation {
+    color: white;
+}
+
+#contacts {
+    display: flex;
+}
+
+#more-details {
+    
+}
+
+#accordion li {
+    list-style: none;
+}
+
+#accordion li label {
+    font-weight: bold;
+    display: flex;
+    cursor: pointer;
+}
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+}
