@@ -4,8 +4,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Image and Video Steganography</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #image {
+                text-decoration: none;
+                color: #101010
+            }
+
+            #image:hover {
+                text-decoration: none;
+            }
+
+            #video {
+                text-decoration: none;
+                color: #101010
+            }
+
+            #video:hover {
+                text-decoration: none;
+                color: beige
+            }
+
+            #button-image {
+                display: inline;
+                background-color: beige;
+                border-radius: 10px;
+                padding: 20px 40px 20px 40px;
+                margin-right: 70px;
+                border: solid black 3px;
+            }
+
+            #button-image:hover {
+                background-color: #101010;
+                color: beige;
+            }
+
+            #button-video {
+                display: inline;
+                background-color: beige;
+                border-radius: 10px;
+                padding: 20px 40px 20px 40px;
+                margin-left: 70px;
+                border: solid black 3px;
+            }
+
+            #button-video:hover {
+                background-color: #101010;
+                color: beige;
+            }
+        </style>
     </head>
     <body>
-        <h2>hello</h2>
+        <py-script src="steg.py"> </py-script>
+        <h1 style="text-align: center; color: #555555; margin: 150px 0 90px 0;"><strong>Image and Video Steganography Tool</strong></h1>
+
+        <div style="text-align: center;">
+            <a id="image" href="https://colab.research.google.com/drive/1t8bmcShaNXzfkn2z7fs2u6HL5mloAAvv?usp=sharing" target="_blank"><h3 id="button-image">Image</h3></a>
+            <a id="video" href=""><h3 id="button-video">Video</h3></a>
+        </div>
     </body>
 </html>
